@@ -1,38 +1,362 @@
-/* .App {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Część nawigacji */
+nav {
+  background-color: #4e4e4e;
+  padding: 15px 15px;
+  height: 50px;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f1f1f1;
+}
+
+.menu-2 {
+  display: none;
+  gap: 20px;
+}
+
+.menu-2 a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.menu-2 a.disabled {
+  cursor: not-allowed;
+}
+
+.menu {
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f1f1f1;
+  padding: 10px;
+}
+
+.link:last-of-type {
+  padding-right: 90px;
+}
+
+/* //Część header */
+
+.header-flex-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 15px 15px;
+}
+
+.company-slogan {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+header {
+  height: calc(100vh - 50px);
+  background-image: url(https://i.picsum.photos/id/221/1440/879.jpg?hmac=-y8GQ4KS-tmCflYwphSLZmsTu-m0rL8U6CldcgLjJoA);
+  background-size: cover;
+}
+
+.header-container {
+  width: 359px;
+  height: 215px;
+}
+
+.slogan-introduction {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.btn-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f1f1f1;
+  padding: 10px;
+  transition: 1s;
+}
+.btn-offer {
+  width: 164px;
+  height: 41px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 3px solid #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 1s;
+}
+
+/* Część o nas */
+section {
+  padding: 15px 15px;
+}
+#aboutUs {
+  background-color: #f1f1f1;
+}
+.workers {
+  font-weight: 700;
+  font-size: 36px;
+  background-color: #f1f1f1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.employee-picture {
+  width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  background-image: url("./Assets/Pracownik.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.team-member {
   display: flex;
   flex-direction: column;
+  margin-top: 44px;
+  font-size: 18px;
+  gap: 50px;
   align-items: center;
+}
+.team-member:nth-of-type(2) {
+  padding-bottom: 50px;
+}
+
+.employee-details {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100%;
+  text-align: justify;
+}
+
+.employee-name {
+  height: 50%;
+  font-weight: bolder;
+}
+.employee-description {
+  height: 50%;
+  font-weight: 400;
+}
+/* Usługi */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 40px;
+}
+#services {
+  background-color: #405d78;
+}
+.services-container > .service {
+  width: 250px;
+  height: 250px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.first-one {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.first-one > div {
+  position: absolute;
+  background-color: #e07a64;
+  height: 22px;
+  width: 22px;
+  left: -10px;
+  top: -10px;
+  border-radius: 180px;
+}
+
+.serv-description {
+  font-size: 20px;
+}
+.serv-description span {
+  display: block;
+}
+.services-header {
+  font-weight: 700;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.service {
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-header {
+  font-size: 36px;
+}
+/* Footer */
+
+footer {
+  background-color: #4e4e4e;
+  padding: 15px 15px;
+}
+.footer-bar {
+  width: 100%;
+  height: 147px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-note {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.icons {
+  color: #ffffff;
+  justify-content: space-between;
+  font-size: 31px;
+}
+.fa-instagram {
+  padding-right: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .services-container > .service {
+    width: 340px;
+    height: 340px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    width: 960px;
   }
-} */
+
+  /* Nawigacja */
+
+  .menu-2 {
+    display: flex;
+  }
+
+  /* Header */
+
+  .btn-offer:hover {
+    background-color: white;
+  }
+
+  .btn-offer:hover > .btn-link {
+    color: black;
+  }
+
+  .header-container {
+    width: 577px;
+    height: 215px;
+  }
+
+  /* About Us  */
+
+  .team-member:nth-of-type(2) {
+    flex-direction: row-reverse;
+    padding-bottom: 44px;
+  }
+
+  .team-member:nth-of-type(2) .employee-details {
+    text-align: end;
+    margin-right: 44px;
+    margin-left: 0;
+  }
+  .workers {
+    display: block;
+    text-align: initial;
+  }
+  .employee-picture {
+    width: 221px;
+    height: 220px;
+  }
+
+  .team-member {
+    align-items: center;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .employee-details {
+    width: 72%;
+    margin-left: 44px;
+    text-align: initial;
+  }
+
+  /* Services  */
+
+  .service:hover {
+    transform: scale(1.05);
+  }
+
+  .services-container {
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .services-container > .service {
+    width: 198px;
+    height: 193px;
+    margin: 50px;
+  }
+
+  /* Footer  */
+
+  .footer-bar {
+    height: 41px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
