@@ -13,7 +13,7 @@ const Nav = () => {
                 <a href="#services">Oferta</a>
               </li>
               <li>
-                <a className="disabled" href="">
+                <a className="disabled" href="#">
                   Kontakt
                 </a>
               </li>
