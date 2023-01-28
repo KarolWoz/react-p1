@@ -13,7 +13,9 @@ const Nav = () => {
                 <a href="#services">Oferta</a>
               </li>
               <li>
-                <a className="disabled">Kontakt</a>
+                <a className="disabled" href="">
+                  Kontakt
+                </a>
               </li>
             </ul>
           </div>
