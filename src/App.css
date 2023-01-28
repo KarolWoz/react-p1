@@ -95,7 +95,7 @@ nav {
 
 header {
   height: calc(100vh - 50px);
-  background-image: url(https://i.picsum.photos/id/221/1440/879.jpg?hmac=-y8GQ4KS-tmCflYwphSLZmsTu-m0rL8U6CldcgLjJoA);
+  background-image: url("./Assets/Tło.jpg");
   background-size: cover;
 }
 
